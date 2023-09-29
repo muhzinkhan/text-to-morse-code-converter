@@ -63,8 +63,9 @@ def morse_converter(text):
     return m_code[1:]
 
 
+print("\nWelcome to the Text to Morse Code Converter!\n")
 while not morse_code:
-    input_text = input("\nEnter the Text and hit enter to get the result: ").lower()
+    input_text = input("Enter the Text and hit enter to get the result\n(alphanumeric characters only): ").lower()
     morse_code = morse_converter(input_text)
 
-print(f"The morse code is :\n{morse_code}\n")
+print(f"Your text in Morse code is:\n{morse_code}\n")
